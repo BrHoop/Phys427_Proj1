@@ -1,0 +1,129 @@
+SIMPLE  =                    T / Written by IDL:  Tue Feb 20 15:34:17 2024      
+BITPIX  =                  -64 /  IEEE double precision floating point          
+NAXIS   =                    2 /                                                
+NAXIS1  =                 5586 / Number of positions along axis 1               
+NAXIS2  =                    4 / Number of positions along axis 2               
+INSTR   = 'Apotspec'           / Instrument                                     
+MODE    = 'XD      '           / Instrument mode                                
+FILENAME= 'BMPer.merged'       / Filename                                       
+SRT_DATE= '2024-02-20'         / Start observation date in UTC                  
+AVE_DATE= '2024-02-20'         / Average observation date in UTC                
+END_DATE= '2024-02-20'         / End observation date in UTC                    
+SRT_TIME= '02:40:26.206'       / Start observation time in UTC                  
+AVE_TIME= '02:41:58.142625'    / Average observation time in UTC                
+END_TIME= '02:43:30.595'       / End observation time in UTC                    
+SRT_MJD = '60360.1114144218'   / Start Modified Julian date                     
+AVE_MJD = '60360.1124785031'   / Average Modified Julian date                   
+END_MJD = '60360.1135485540'   / End Modified Julian date                       
+NCOADDS =                    1 / Number of coadds                               
+ITIME   =        15.0000000000 / Integration time (sec)                         
+IMGITIME=        15.0000000000 / Image integration time, NCOADDSxITIME (sec)    
+TOTITIME=        120.000000000 / Total integration time (sec)                   
+RA      = '00:00:00.00'        / Right Ascension, FK5 J2000                     
+DEC     = '00:00:00.0'         / Declination, FK5 J2000                         
+PA      =        0.00000000000 / Position angle E of N (deg)                    
+SRT_HA  = '+00:00:00.0'        / Start hour angle (hours)                       
+AVE_HA  = '+00:00:00.00'       / Average hour angle (hours)                     
+END_HA  = '+00:00:00.0'        / End hour angle (hours)                         
+SRT_AM  =        1.06167333400 / Start airmass                                  
+AVE_AM  =        1.06284637371 / Average airmass                                
+END_AM  =        1.06406371927 / End airmass                                    
+CREPROG = 'xtellcor'           /  Creation IDL program                          
+VERSION = '5.0.4beta'          / Spextool version                               
+AIMAGE  = 'BMPer.0017.fits'    / A image                                        
+LINCRMAX=                30000 / Linearity correction maximum (DN)              
+SKYORDRK= 'BMPer.0018.fits'    /  Sky or dark image                             
+FLAT    = 'mflat.fits'         /  Flat field image                              
+WAVECAL = 'HD232227.wcal.fits' / Wavecal file                                   
+WAVETYPE= 'Vacuum  '           / Wavelength type                                
+WCTYPE  = '2DXD    '           / Wavelength calibration type                    
+RECTMETH= 'interpolation'      / Rectification method                           
+NAPS    =                    1 /  Number of apertures                           
+NORDERS =                    1 /  Number of orders                              
+ORDERS  = '0       '           /  Order numbers                                 
+PLTSCALE=       0.390000000000 / Plate scale (arcsec pixel-1)                   
+SLTH_PIX=                  110 / Nominal slit height (pixels)                   
+SLTH_ARC=                   45 / Slit height (arcseconds)                       
+SLTW_PIX=        2.56410000000 / Slit width (pixels)                            
+SLTW_ARC=                    1 / Slit width (arcseconds)                        
+RP      =                17949 / Slit-limited average resolving power           
+XROR003 = '4,2043  '           / Extraction range for order 003                 
+XROR004 = '3,2044  '           / Extraction range for order 004                 
+XROR005 = '3,2044  '           / Extraction range for order 005                 
+XROR006 = '103,2044'           / Extraction range for order 006                 
+XROR007 = '1303,2044'          / Extraction range for order 007                 
+APOSO003= '32.6    '           / Aperture positions (arcseconds) for order 003  
+APOSO004= '32.7    '           / Aperture positions (arcseconds) for order 004  
+APOSO005= '32.7    '           / Aperture positions (arcseconds) for order 005  
+APOSO006= '32.6    '           / Aperture positions (arcseconds) for order 006  
+APOSO007= '32.7    '           / Aperture positions (arcseconds) for order 007  
+PSFRAD  =        2.00000000000 / PSF radius (arcseconds)                        
+APRADII = '      2.00000'      / Aperture radii (arcseconds)                    
+BGSTART =        2.10000000000 / Background start radius (arcseconds)           
+BGWIDTH =                    5 / Background width (arcseconds)                  
+BGORDER =                    0 / Background polynomial fit degree               
+XUNITS  = 'um      '           / Units of the X axis                            
+YUNITS  = 'ergss-1cm-2A-1'     / Units of the Y axis                            
+XTITLE  = '!7k!5 (!7l!5m)'     / IDL X title                                    
+YTITLE  = '!5f!D!7k!N!5 (ergs s!E-1!N cm!E-2!N !5!sA!r!u!9 %!5!n!E-1!N)' /  IDL 
+DISPO003=    0.000287950000000 / Dispersion (um pixel-1) for order 003          
+DISPO004=    0.000216110000000 / Dispersion (um pixel-1) for order 004          
+DISPO005=    0.000173160000000 / Dispersion (um pixel-1) for order 005          
+DISPO006=    0.000144560000000 / Dispersion (um pixel-1) for order 006          
+DISPO007=    0.000122630000000 / Dispersion (um pixel-1) for order 007          
+NSPCOMB =                    8 / Number of spectra files combined               
+NAPCOMB =                    0 / Number of apertures combined                   
+A0VSTD  = 'HD33654 '           / Telluric Correction A0 V Standard              
+A0VBMAG =              6.24000 / B-band magnitude                               
+A0VVMAG =              6.16000 / V-band magnitude                               
+DELTAAM =           0.00544472 / Average of (std-obj) airmass                   
+TELMETH = 'Deconvolution'      / Telluric correction method                     
+VEGADV  =              56.8528 / Vega velocity shift (km s-1)                   
+TCMAXDEV=              5.27758 / The maxmimum % deviation of Vega-data          
+TCRMSDEV=              2.18533 / The RMS % deviation of Vega-data               
+TELFILE = 'BMPer.tellcor_tellspec.fits' / The telluric correction file          
+OBJNAME = 'BM Per  '           / Object name, per TCC ObjName                   
+NFOWLER =                    8 / Number of frame reads                          
+HISTORY                                                                         
+HISTORY ######################## Xspextool History ########################     
+HISTORY                                                                         
+HISTORY Spextool FITS files contain an array of size                            
+HISTORY [nwaves,4,norders*naps]. The ith image (array[*,*,i]) contains the      
+HISTORY data for a single extraction aperture within an order such that,        
+HISTORY lambda=array[*,0,i], flux=array[*,1,i],                                 
+HISTORY uncertainty=array[*,2,i],flag=array[*,3,i].  The zeroth image           
+HISTORY (array[*,*,0]) contains the data for the aperture in the order          
+HISTORY closest to the bottom of the detector that is closest to the            
+HISTORY bottom of the slit (i.e. also closest to the bottom of the              
+HISTORY detector).  Moving up the detector, the FITS array is filled in         
+HISTORY with subsequent extraction apertures.  If no orders have been           
+HISTORY deselected in the extraction process, the contents of the ith           
+HISTORY aperture in order j can be found as follows:                            
+HISTORY lambda=array[*,0,{j-min(orders)}*naps + (i-1)],                         
+HISTORY flux=array[*,1,{j-min(orders)}*naps + (i-1)],                           
+HISTORY uncertainty=array[*,2,{j-min(orders)}*naps + (i-1)],                    
+HISTORY flag=array[*,3,{j-min(orders)}*naps + (i-1)].                           
+HISTORY                                                                         
+HISTORY ######################## Xcombspec History ########################     
+HISTORY                                                                         
+HISTORY The spectra in BMPer.spec0017.fits, BMPer.spec0018.fits,                
+HISTORY BMPer.spec0019.fits, BMPer.spec0020.fits, BMPer.spec0021.fits,          
+HISTORY BMPer.spec0022.fits, BMPer.spec0023.fits, BMPer.spec0024.fits were      
+HISTORY combined using a Robust Weighted Mean with a threshold of 8.            
+HISTORY Aperture 01 Modifications: The scale factors were determined using      
+HISTORY order 006 and are 1.03108, 0.923007, 1.00773, 0.909208, 0.880729,       
+HISTORY 0.994386, 1.08564, 1.44277.  The spectral shapes have been              
+HISTORY corrected.                                                              
+HISTORY                                                                         
+HISTORY ######################## Xtellcor History #########################     
+HISTORY                                                                         
+HISTORY The Vega model was shifted by 56.8528 km s-1.  The maximum              
+HISTORY deviation and rms deviation between the modified Vega model and         
+HISTORY the data over the kernel wavelength range are 5.27758% and              
+HISTORY 2.18533%, respectively.  The telluric correction spectra for            
+HISTORY aperture 01 were shifted by -0.77, -1.16, -1.24, -1.14, -1.18           
+HISTORY pixels.                                                                 
+HISTORY                                                                         
+HISTORY ###################### Xmergeorders History #######################     
+HISTORY                                                                         
+HISTORY This merged spectrum was derived from the file BMPer.tellcor.fits.      
