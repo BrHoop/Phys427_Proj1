@@ -78,7 +78,7 @@ Radial velocity is -43.1 km/s \\
 \end{question}
 
 \begin{answer}
-    % Answer here
+    We used the astropy built in Sigma-Clip model in order to normalize our flux. The way it works is it attempts to fit a chevyshev polynomial to our data, based on points a given amount of standard deviations below or above the mean. It then applies the chebyshev polynomial to the data, and then attempts a fit again. It does this until the built in check decides that the fit is good, and that the continuum flux has been properly normalized. It can be a little challenging to find the right parameters for the polynomial degree, amount of standard deviations below the mean, amount of standard deviations above the mean, and the maximum number of iterations. After a couple tries we were able to get good normalized continuum flux.
 \end{answer}
 
 \vspace{10em}
