@@ -1,0 +1,163 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\setlength{\parindent}{0pt}
+
+\newenvironment{question}[1]
+  {\par\noindent\textbf{#1}\par\vspace{0.5em}}
+  {\vspace{1em}}
+
+\newenvironment{answer}
+  {\par\noindent\par\vspace{0.5em}\noindent\ignorespaces}
+  {\vspace{1em}}
+
+\title{Project 1 Phase 3: Spectral Fitting with KORG \\ \Large Group C Team
+}
+\author{Bryson Hooper, Mason Rohner, Kevan Beckstead, Brandon Burton}
+\date{November 6, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{question}{}
+    What object(s) is your group studying? See what information you can find about the star. Think about where it fits on the main sequence, whether it is a variable star or not, what physical parameters we know about the star (including distance), etc. Comment on what impacts these things may have on the star's spectrum.
+
+    \textit{Tip: Have fun!}
+\end{question}
+
+\begin{answer}
+   \url{ https://simbad.cds.unistra.fr/simbad/sim-basic?Ident=RY+Cas&submit=SIMBAD+search}
+
+
+RYCas - Classic Cepheid Variable \\
+23 52 07.0321954200 +58 44 30.208138620 \\
+Spectral type F9Ib, likely a little larger than the Sun
+3033 pc by parallax or 2549 by Cepheid variable method \\
+Proper motion is -3.074 -1.058 mas/year \\
+Radial velocity is -84.2 km/s \\
+
+
+
+
+\url{https://simbad.cds.unistra.fr/simbad/sim-id?mescat.distance=on&Ident=%40245636&Name=V*+BM+Per&submit=display+selected+measurements#lab_meas}
+
+
+
+
+
+BMPer - Classic Cepheid variable \\
+04 29 39.3890067672 +48 25 19.101057240 
+K5, likely smaller than the Sun \\
+3472 pc by parallax or 2754 pc by Cepheid variable method \\
+Proper motion is 0.040 -0.931 mas/year \\
+Radial velocity is -43.1 km/s \\
+\end{answer}
+
+\vspace{10em}
+
+\begin{question}{}
+    Read through the CSV and header files for your object(s). What do you notice? Are there errors in the data that you need to correct? If so, what are they and how did you correct them? What information in the header do you think will be useful for analyzing the spectra (both the category and value)? What wavelength regions will you analyze in the spectra? Do you have to make any modifications to your linelist based on what you're considering? If so, what will you change and how?
+
+    \textit{Tip: Plot your spectra!}
+\end{question}
+
+\begin{answer}
+    % Answer here
+\end{answer}
+
+\vspace{10em}
+
+\begin{question}{}
+    How did your group normalize the continuum flux of your spectra? Did you run into any problems? Are there any techniques or algorithms that you found useful to do this?
+
+    \textit{Tip: Consider writing your code in such a way that it could easily be ran by a new undergraduate in their research!}
+\end{question}
+
+\begin{answer}
+    We used the astropy built in Sigma-Clip model in order to normalize our flux. The way it works is it attempts to fit a chevyshev polynomial to our data, based on points a given amount of standard deviations below or above the mean. It then applies the chebyshev polynomial to the data, and then attempts a fit again. It does this until the built in check decides that the fit is good, and that the continuum flux has been properly normalized. It can be a little challenging to find the right parameters for the polynomial degree, amount of standard deviations below the mean, amount of standard deviations above the mean, and the maximum number of iterations. After a couple tries we were able to get good normalized continuum flux.
+\end{answer}
+
+\vspace{10em}
+
+\begin{question}{}
+    How did your group correct for the motion of the star? What lines did you compare to make sure the spectra is shifted properly?
+
+    \textit{Tip: Look at the header file, and don't overcomplicate things!} \smiley
+\end{question}
+
+\begin{answer}
+    % Answer here
+\end{answer}
+
+\vspace{10em}
+
+\begin{question}{}
+    What initial fit parameters did you choose (free and fixed, include both the parameters and their values)? Justify why your choices are reasonable.
+
+    \textit{Tip: If you modify the metallicity, remember to change it in the} \verb|synthesize_spectrum| \textit{function as well!}
+\end{question}
+
+\begin{answer}
+    % Answer here
+\end{answer}
+
+\vspace{10em}
+
+\begin{question}{}
+    After running the code, what are the best fit parameters? Do these make sense for your star? Did you have to make changes to your initial guesses or your fixed parameters? If so, what changes? How long did the fit take to run?
+
+    \textit{Tip: Remember to examine the residual error plot at the bottom! Try to get all residuals between $\pm 0.050$, or $\pm 5\%$.}
+\end{question}
+
+\begin{answer}
+    % Answer here
+\end{answer}
+
+\vspace{10em}
+
+\begin{question}{}
+    Include a picture of the plot with the model vs. the data and residuals. What do you notice? Comment on any features. You might consider spectral features that are fit well (what lines are they?), features that the model misses (why are they missed?), or other features in the spectrum that are interesting (what possible causes are there for such features?). This is your chance to think about the physics of the stellar atmosphere, how well we are modeling it, and what our model assumes. Please give this some careful thought.
+
+    \textit{Tip: Consider highlighting/circling specific features in your plot so that they are easier to identify!}
+\end{question}
+
+% Code to insert an image
+% \begin{figure}[htbp]
+%   \begin{center}
+%     \includegraphics[width=1\textwidth]{filename.ext}
+%   \end{center}
+% \end{figure}
+
+\begin{answer}
+    % Answer here
+\end{answer}
+
+\vspace{10em}
+
+\begin{question}{}
+    Now that you have completed the analysis, go back and explore. It is up to your creativity what you do. Some ideas could be to play around with what parameters you are fitting over, plot synthetic spectra for a variety of initial parameters to better understand spectra, look deeper into the linelist or MARCS atmospheres, experiment with more specific metal abundances, try different regions of the spectra, make improvements to the code, etc. Please put some serious effort into this for your own learning and interest. Write about what you did and what you learned from it (including plots, if relevant).
+
+    \textit{Tip: It's okay to Google things, reach out to other students, the TA, or faculty! This is for you to get a feel of how what you are learning could be relevant to research.}
+\end{question}
+
+\begin{answer}
+    % Answer here
+\end{answer}
+
+\vspace{10em}
+
+\begin{question}{}
+    What feedback do you have on this project? What parts did you find helpful and informative, and what parts were not as helpful? What would you suggest happens differently? Are there other parts of analyzing stellar spectra or exploring stellar atmospheres in general that you would like to explore?
+
+    \textit{Tip: Answering this question is greatly appreciated!}
+\end{question}
+
+\begin{answer}
+    % Answer here
+\end{answer}
+
+\end{document}
